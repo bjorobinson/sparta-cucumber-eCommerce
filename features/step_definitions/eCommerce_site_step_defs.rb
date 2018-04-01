@@ -33,11 +33,14 @@ When("I get password from a confirmation email") do
 end
 
 When("I follow these links to set my password") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ten_min_mail.click_confirm_link
+  @password = ecom_my_account.get_password
+  ecom_my_account.click_reset_password
+  ecom_my_account.return_to_login
 end
 
 Then("I am returned to the login page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(ecom_my_account.get_url).to eq "http://store.demoqa.com/wp-login.php"
 end
 
 When("I fill in my password") do

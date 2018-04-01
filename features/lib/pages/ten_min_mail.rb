@@ -11,11 +11,14 @@ class TenMinMail
   end
 
   def see_confirm_email
-    click_link('[ONLINE STORE] Your username and password info')
+    find('a', text: '[ONLINE STORE] Your username and password info').click
   end
 
   def get_email
     find_field('fe_text').value
   end
 
+  def click_confirm_link
+    find('a', text: 'http://store.demoqa.com/wp-login.php?').click
+  end
 end
