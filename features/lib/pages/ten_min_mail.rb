@@ -14,4 +14,8 @@ class TenMinMail
     click_link('[ONLINE STORE] Your username and password info')
   end
 
+  def get_email
+    find_field('fe_text').value
+  end
+
 end

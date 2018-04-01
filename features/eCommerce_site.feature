@@ -1,6 +1,7 @@
 Feature: eCommerce Login, Register, and Purchasing
   Scenario: Registering a new account
-    Given I access the homepage
+    Given I retrieve email credentials
+      And I access the homepage
       And I access the My Account Page
       And I access the register page
     When I fill in my username

@@ -1,3 +1,8 @@
+Given ("I retrieve email credentials") do
+  ten_min_mail.visit_site
+  @login = ten_min_mail.get_email
+end
+
 Given("I access the homepage") do
   ecom_homepage.visit_homepage
 end
@@ -11,11 +16,11 @@ Given("I access the register page") do
 end
 
 When("I fill in my username") do
-  ecom_my_account.enter_username 'amb51392'
+  ecom_my_account.enter_username @login
 end
 
 When("I fill in my email") do
-  ecom_my_account.enter_email 'amb51392@miauj.com'
+  ecom_my_account.enter_email @login
 end
 
 When("I register my account") do
