@@ -34,4 +34,9 @@ class EcomProduct
   def review_confirmation
     current_url.include? "transaction-results"
   end
+
+  def visit_accessories
+    # requires manually hovering element
+    click_link('Accessories')
+  end
 end

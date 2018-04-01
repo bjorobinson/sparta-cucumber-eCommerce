@@ -83,19 +83,16 @@ Then("I am taken to the order confirmation page") do
   expect(ecom_product.review_confirmation).to be true
 end
 
-Given("I access the accessories product gallery") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
 
 Given("I access the accessories product gallery") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.visit_accessories
 end
 
 Given("I add magic mouse to cart") do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-When("I change the quantity of my order to {int}") do |int|
+When("I change the quantity of my order to 9") do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
