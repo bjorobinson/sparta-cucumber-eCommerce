@@ -10,21 +10,21 @@ Given("I access the register page") do
   ecom_my_account.visit_register
 end
 
-
 When("I fill in my username") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_my_account.enter_username 'amb51392'
 end
 
 When("I fill in my email") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_my_account.enter_email 'amb51392@miauj.com'
 end
 
 When("I register my account") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_my_account.click_register
 end
 
 When("I get password from a confirmation email") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ten_min_mail.visit_site
+  ten_min_mail.see_confirm_email
 end
 
 When("I follow these links to set my password") do

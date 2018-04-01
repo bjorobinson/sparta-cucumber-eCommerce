@@ -10,4 +10,8 @@ module ECommerceSite
     EcomMyAccount.new
   end
 
+  def ten_min_mail
+    TenMinMail.new
+  end
+
 end
