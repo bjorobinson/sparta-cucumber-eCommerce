@@ -89,11 +89,11 @@ Given("I access the accessories product gallery") do
 end
 
 Given("I add magic mouse to cart") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.add_mouse
 end
 
 When("I change the quantity of my order to 9") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.change_quantity 9
 end
 
 When("I access buy mouse link") do

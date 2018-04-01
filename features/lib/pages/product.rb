@@ -39,4 +39,13 @@ class EcomProduct
     # requires manually hovering element
     click_link('Accessories')
   end
+
+  def add_mouse
+    click_button('Add To Cart')
+  end
+
+  def change_quantity new_num
+    fill_in('quantity', with: new_num)
+    click_button('Update')
+  end
 end
