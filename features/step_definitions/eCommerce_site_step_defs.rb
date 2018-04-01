@@ -3,11 +3,11 @@ Given("I access the homepage") do
 end
 
 Given("I access the My Account Page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_homepage.visit_my_account
 end
 
 Given("I access the register page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_my_account.visit_register
 end
 
 

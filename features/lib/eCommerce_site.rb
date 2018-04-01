@@ -6,4 +6,8 @@ module ECommerceSite
     EcomHomepage.new
   end
 
+  def ecom_my_account
+    EcomMyAccount.new
+  end
+
 end
