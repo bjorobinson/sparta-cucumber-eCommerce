@@ -1,6 +1,7 @@
 require 'capybara/cucumber'
 require 'rspec'
 require 'pry'
+require_relative '../lib/eCommerce_site'
 
 # The below line of code now means that the chrome driver is registered before every run.
 # Any query stated at the top level of the env.rb file will be initiated at every cucumber run
@@ -18,4 +19,4 @@ Capybara.configure do |config|
 end
 
 
-# World()
+World(ECommerceSite)

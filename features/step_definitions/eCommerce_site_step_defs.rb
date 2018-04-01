@@ -1,5 +1,5 @@
 Given("I access the homepage") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_homepage.visit_homepage
 end
 
 Given("I access the My Account Page") do
