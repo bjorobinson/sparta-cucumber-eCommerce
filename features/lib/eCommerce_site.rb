@@ -14,4 +14,8 @@ module ECommerceSite
     TenMinMail.new
   end
 
+  def ecom_product
+    EcomProduct.new
+  end
+
 end

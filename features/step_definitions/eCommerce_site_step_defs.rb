@@ -56,60 +56,34 @@ Then("I am taken to the user dashboard") do
 end
 
 Given("I access the product gallery") do
-
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_homepage.visit_product_gallery
 end
 
-Given("I add iphone {int} to cart") do |int|
-  pending # Write code here that turns the phrase above into concrete actions
+Given("I add iphone to cart") do
+  ecom_product.add_iphone
 end
 
 When("I go to checkout") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.go_to_checkout
 end
 
 When("I click continue") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.continue_checkout
 end
 
 When("I enter in details for shipping price") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.enter_shipping_details
 end
 
 When("I click buy") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_product.click_purchase
 end
 
 Then("I am taken to the order confirmation page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(ecom_product.review_confirmation).to be true
 end
 
 Given("I access the accessories product gallery") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given("I add iphone {int} to cart") do |int|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I go to checkout") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I click continue") do
-
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I enter in details for shipping price") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I click buy") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then("I am taken to the order confirmation page") do
   pending # Write code here that turns the phrase above into concrete actions
 end
 

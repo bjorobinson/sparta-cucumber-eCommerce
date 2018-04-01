@@ -13,4 +13,8 @@ class EcomHomepage
   def visit_my_account
     click_link('My Account')
   end
+
+  def visit_product_gallery
+    click_link('Product Category')
+  end
 end
