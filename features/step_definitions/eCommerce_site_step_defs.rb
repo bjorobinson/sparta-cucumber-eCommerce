@@ -34,6 +34,7 @@ end
 
 When("I follow these links to set my password") do
   ten_min_mail.click_confirm_link
+  binding.pry
   @password = ecom_my_account.get_password
   ecom_my_account.click_reset_password
   ecom_my_account.return_to_login

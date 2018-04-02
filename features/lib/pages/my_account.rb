@@ -21,7 +21,8 @@ class EcomMyAccount
   end
 
   def get_password
-    puts find_field('pass1-text').value
+    sleep 2
+    puts find('#pass1')["data-pw"]
   end
 
   def click_reset_password
