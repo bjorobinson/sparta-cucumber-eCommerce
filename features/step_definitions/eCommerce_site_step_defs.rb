@@ -97,9 +97,5 @@ When("I change the quantity of my order to 9") do
 end
 
 When("I access buy mouse link") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I add the magic mouse to cart") do
-  pending # Write code here that turns the phrase above into concrete actions
+  ecom_homepage.buy_mouse_now
 end

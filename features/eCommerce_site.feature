@@ -29,22 +29,23 @@ Feature: eCommerce Login, Register, and Purchasing
   #     And I click buy
   #   Then I am taken to the order confirmation page
 
-  Scenario: Purchasing multiple of an object from product gallery
+  # Scenario: Purchasing multiple of an object from product gallery
+  #   Given I access the homepage
+  #     And I access the accessories product gallery
+  #     And I add magic mouse to cart
+  #   When I go to checkout
+  #     And I change the quantity of my order to 9
+  #     And I click continue
+  #     And I enter in details for shipping price
+  #     And I click buy
+  #   Then I am taken to the order confirmation page
+
+  Scenario: Purachasing something using links from the homepage
     Given I access the homepage
-      And I access the accessories product gallery
+    When I access buy mouse link
       And I add magic mouse to cart
-    When I go to checkout
-      And I change the quantity of my order to 9
+      And I go to checkout
       And I click continue
       And I enter in details for shipping price
       And I click buy
     Then I am taken to the order confirmation page
-
-  # Scenario: Purachasing something using links from the homepage
-  #   Given I access the homepage
-  #   When I access buy mouse link
-  #     And I add the magic mouse to cart
-  #     And I go to checkout
-  #     And I enter in details for shipping price
-  #     And I click buy
-  #   Then I am taken to the order confirmation page

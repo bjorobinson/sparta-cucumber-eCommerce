@@ -17,4 +17,8 @@ class EcomHomepage
   def visit_product_gallery
     click_link('Product Category')
   end
+
+  def buy_mouse_now
+    click_link('Buy Now')
+  end
 end
